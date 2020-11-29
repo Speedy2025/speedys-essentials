@@ -2,13 +2,9 @@
 A datapack inspired by the Essentials plugin that offers homes, hubs, and tpr (like tpa)
 
 ## Compatibility
-This pack relies on PlayerDB, created by @RitikShah
+This pack relies on PlayerDB, created by rx#1284 on Discord
 
 This pack currently uses the 0.5 version, which is not available anymore. Plans are being made to update to the latest version.
-
-
-### Advanced Notes on Compatibility
-1) -1 0 -1 through 1 5 1 is currently in use for the datapack to be effective, including 0 0 0 being a yellow shulker box.
 
 ## Usage
 Each player is assigned a uid on join (unless they already have one). This is used in most commands.

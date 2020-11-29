@@ -40,10 +40,6 @@ tellraw @a[tag=debug] ["",{"text":"[SE Load] ","color":"green"},{"text":"Loaded 
 #Default World Configuration
 # Dev Note: I'm using the old method
 forceload add -1 -1 1 1
-fill -1 5 -1 1 0 1 bedrock
-setblock 0 0 0 yellow_shulker_box[facing=east]
-setblock 0 1 0 end_gateway{ExactTeleport:1b,ExitPortal:{X:0,Y:-5,Z:0}}
-setblock 0 2 0 water
 tellraw @a[tag=debug] ["",{"text":"[SE Load] ","color":"green"},{"text":"Loaded block configuration."}]
 
 ###################
