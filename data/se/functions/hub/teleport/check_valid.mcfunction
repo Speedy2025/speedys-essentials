@@ -6,7 +6,7 @@ execute store result score #hub.whitelisted se.internal run data get storage rx:
 #Set input
 
 scoreboard players operation #hub.whitelist se.internal = @s rx.uid
-execute if score #hub.locked se.internal matches 0 run function se:hub/teleport/action
+execute if score #hub.locked se.internal matches 0 run function se:hub/teleport/step
 execute if score #hub.locked se.internal matches 1 if score #hub.whitelisted se.internal matches 1 run function se:hub/whitelist/root
 execute if score #hub.locked se.internal matches 1 if score #hub.whitelisted se.internal matches 0 run tellraw @s ["",{"text":"[Hubs] ","color":"green"},{"text":"Sorry, hub "},{"score":{"name":"@s","objective":"hub"},"color":"gold"},{"text":" is locked."}]
-execute if score #hub.locked se.internal matches 1 if score #hub.whitelisted se.internal matches -1 run function se:hub/teleport/action
+execute if score #hub.locked se.internal matches 1 if score #hub.whitelisted se.internal matches -1 run function se:hub/teleport/step
