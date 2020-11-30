@@ -3,15 +3,11 @@
 #Variables
 # tse_Ontime - Stores Player Ontime, Legacy
 # se.player - Used for player temporary storage
-# se.player.rx - Used to store player rotation (x)
-# se.player.rz - Used to store player rotation (z)
 # se.internal - Used for internal temporary storage
 # se.settings - Used to configure Speedy's Essentials
 scoreboard objectives add tse_Ontime dummy [{"text":"tse_Ontime","color":"gray"}]
 scoreboard objectives add tse_OntimeWeeks dummy [{"text":"tse_OntimeWeeks","color":"gray"}]
 scoreboard objectives add se.player dummy [{"text":"se.player","color":"gray"}]
-scoreboard objectives add se.player.rx dummy [{"text":"se.player.rx","color":"gray"}]
-scoreboard objectives add se.player.rz dummy [{"text":"se.player.rz","color":"gray"}]
 scoreboard objectives add se.internal dummy [{"text":"se.internal","color":"gray"}]
 scoreboard players set #cycle.success se.internal 1
 scoreboard players set #const.-1 se.internal -1
@@ -38,7 +34,6 @@ scoreboard objectives add tpr trigger [{"text":"TPr","color":"green"}]
 tellraw @a[tag=debug] ["",{"text":"[SE Load] ","color":"green"},{"text":"Loaded player triggers."}]
 
 #Default World Configuration
-# Dev Note: I'm using the old method
 forceload add -1 -1 1 1
 tellraw @a[tag=debug] ["",{"text":"[SE Load] ","color":"green"},{"text":"Loaded block configuration."}]
 
