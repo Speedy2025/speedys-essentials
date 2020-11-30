@@ -16,3 +16,4 @@ scoreboard players enable @a se_help
 scoreboard players enable @a tpr
 scoreboard players enable @a hub
 scoreboard players enable @a home
+execute as @a run function se:update_ontime
