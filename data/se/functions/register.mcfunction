@@ -3,4 +3,5 @@ data modify storage rx:io playerdb.player.data.se set value {homes:[],hub:{x:0,y
 function rx.playerdb:api/save_self
 tellraw @s [{"text":"[Speedy's Essentials] ","color":"green"},{"text":" You've been initialized! If you need help, remember to consult /trigger se_help!","color":"white"}]
 tag @s add se.registered
+tag @s remove se.registered.tmp
 function tser_main:messages/first_time

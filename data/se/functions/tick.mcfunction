@@ -1,5 +1,6 @@
 scoreboard players add @a tse_Ontime 1
-execute as @a[tag=!se.registered] run function se:register
+execute as @a[tag=se.registered.tmp] run function se:register
+execute as @a[tag=!se.registered] run tag @s add se.registered.tmp
 execute as @a[scores={se_help=1..}] run function se:help/root
 execute as @a[scores={tpr=1..}] run function se:tpr/send/root
 execute as @r[scores={tpr=..-1}] run function se:tpr/accept/root
