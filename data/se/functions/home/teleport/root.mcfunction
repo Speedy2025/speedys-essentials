@@ -1,10 +1,16 @@
-# Get self, then cycle through homes.
-# If it exists, it will return [2], otherwise it will return [3]
-# If [3], return failure
-# If [2], prepare to teleport
+# Root Home Teleport Function
+# - Called by se:main/tick
+# Context: Player
+
+# Get & Validate Homes
 function rx.playerdb:api/get_self
-scoreboard players operation #cycle.input se.internal = @s home
-scoreboard players set #cycle.success se.internal 3
-execute if score #cycle.input se.internal <= @s se.player run function se:home/cycle
-execute if score #cycle.success se.internal matches 3 run tellraw @s ["",{"text":"[Homes] ","color":"green"},{"text":"Home "},{"score":{"name":"#cycle.input","objective":"se.internal"},"color":"gold"},{"text":" does not exist."}]
-execute if score #cycle.success se.internal matches 2 run function se:home/teleport/step
+function se:home/cycler/root
+
+# Display Bounding Error
+execute if score #se.homes.result se.storage matches 1 run tellraw @s[tag=!se.mute.system] ["",{"text":"[Homes]","color":"green"},{"text":" You only have "},{"score":{"name":"#se.homes.max","objective":"se.storage"},"color":"gold"},{"text":" homes."}]
+
+# Go to home
+execute if score #se.homes.result se.storage matches 2 run function se:home/teleport/prepare_teleport
+
+# Display Invalid Home Error
+execute if score #se.homes.result se.storage matches 3 run tellraw @s[tag=!se.mute.system] ["",{"text":"[Homes]","color":"green"},{"text":" Home "},{"score":{"name":"@s","objective":"home"},"color":"gold"},{"text":" is not set."}]
