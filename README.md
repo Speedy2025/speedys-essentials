@@ -12,6 +12,8 @@ Each player is assigned a uid on join (unless they already have one). This is us
 
 To open up a help menu on the commands offered, use `/trigger se_help`. You will see basic information about you as a player and see a list of pages to open. Click on the page number (Page 2, for example) to open the page and learn more about Speedy's Essentials. 
 
+## On Bugs...
+While I make a reasonable effort to test on my local world and server before release, I cannot promise this will be bug-free. If you do know bugs, please mesage me on discord **@Speedy2025#2025** or ping me on one of the servers I can be found on.
 
 # Features in Depth
 
@@ -32,10 +34,16 @@ What are admin tags? Admin tags are used to control players individually and cha
 
 Admin tags are not given to players by default and must be given through other datapacks or manually through the tag command.
 
+## The Help Menu
+Got questions? Have them answered!
+
+Primary command: `/trigger se_help`
+
+The help menu contains all of the information about commands in an easy-to-ready in-game menu where you can hover over the command to save chat space. More advanced? You can even go to specific pages.
 ## Homes
 Feel assured to explore with homes!
 
-Primary command: `/trigger home set #`
+Primary commands: `/trigger home set #` & `/trigger sethome set #`
 
 Homes act like waypoints in that you can put them anywhere you are and instantly travel to them at any time. Only you can travel to your own homes.
 
