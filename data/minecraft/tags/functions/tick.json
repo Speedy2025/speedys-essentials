@@ -1,6 +1,6 @@
 {
 	"replace": false,
 	"values": [
-		"se:tick"
+		"se:main/tick"
 	]
 }
