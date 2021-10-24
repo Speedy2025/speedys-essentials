@@ -2,7 +2,6 @@
 
 tp @s @a[tag=se.tpr.dest,limit=1]
 scoreboard players reset @s se.tpr.cache
-say ACTION!
 #Send Message to Self
 execute as @a[tag=se.tpr.dest] run function rx.playerdb:api/get_self
 tellraw @s[tag=!se.mute.tpr,tag=!se.mute.system] ["",{"text":"[TPr] ","color":"green"},{"storage":"rx:io","nbt":"playerdb.player.info.name","color":"gold"},{"text":" accepted the request."}]

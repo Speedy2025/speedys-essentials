@@ -40,6 +40,7 @@ Got questions? Have them answered!
 Primary command: `/trigger se_help`
 
 The help menu contains all of the information about commands in an easy-to-ready in-game menu where you can hover over the command to save chat space. More advanced? You can even go to specific pages.
+
 ## Homes
 Feel assured to explore with homes!
 
@@ -61,12 +62,20 @@ Primary command: `/trigger tpr set #`
 
 Teleport requests allow players to ask to be teleported to another player, who chooses to accept or ignore the request. By doing this, players choose who gets to see their base and it is unnessesary to give players operator status to teleport them and others around.
 
+
+## Ontime
+How long have you been here since SEv3 was installed?
+
+Primary command: `/trigger ontime set #`
+
+You can view how long you and other players have been online. Your ontime on the datapack can be negatively impacted by server lag. While it isn't entirely nessesary to squish it, you may have a more accurate representation of it without lag.
+
 # FAQ
 ### Q. Is Speedy's Essentials easy to install?
 
 A. *Yes! All you need to do is take the datapack and put it into your datapacks folder inside each world you want it in.*
 
-### Q. Does Speedy's Essentials require any other datapacks?
+### Q. Does Speedy's Essentials require any other datapacks or resourcepacks?
 
 A. *Yes. PlayerDB by @rx#1284 is manditory.*
 
@@ -78,6 +87,8 @@ A. *Everything is explained in detail in the help menu.  You can access it in ga
 
 A. *Absolutely not, but you can show your love by reporting any bugs to me on discord* **@Speedy2025#2025**. *You can find me on the r/MinecraftCommands discord or on @rx#1284's discord*
 
+### Q. Can I, a Datapack Developer, add more homes and stuff?
 
+A. Yes! It's not too complicated either. The function tag `se:max_homes` can be added to in order to set homes your way. In that function, set `#se.homes.max se.storage` to whatever you want the player's homes to be. By default, it is based on their ontime and goes up to 30. If you just want to add homes, the `#se.homes.max` is preset to the default value before you call it.
 
-e
+f

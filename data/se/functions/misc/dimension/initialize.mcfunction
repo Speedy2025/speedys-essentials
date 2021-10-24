@@ -9,4 +9,4 @@ summon minecraft:area_effect_cloud ~ ~ ~ {Age: -2147483648, Duration: -1, WaitTi
 
 
 
-execute as @e[tag=se.dim.uninit] run function se:misc/dimension/initialize_step2
+execute as @e[tag=se.dim.uninit] at @s run function se:misc/dimension/initialize_step2

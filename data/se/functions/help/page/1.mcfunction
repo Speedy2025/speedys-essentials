@@ -7,7 +7,7 @@ tellraw @s ["",{"text":"\u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 
 tellraw @s ["",{"text":"Your UID: ","color":"gold"},{"score":{"name":"@s","objective":"rx.uid"}},{"text":" "},{"text":"Max Homes: ","color":"gold"},{"score":{"name":"#se.homes.max","objective":"se.storage"}}]
 tellraw @s ["",{"text":"Total Ontime: ","color":"gold"},{"score":{"name":"@s","objective":"tse_OntimeDays"}},{"text":"d "},{"score":{"name":"@s","objective":"tse_OntimeHours"}},{"text":"h "},{"score":{"name":"@s","objective":"tse_OntimeMinute"}},{"text":"m "},{"score":{"name":"@s","objective":"tse_OntimeSecond"}},{"text":"s"}]
 
-tellraw @s ["",{"text":"[List All UIDs]","hoverEvent":{"action":"show_text","value":[{"text":"Click to list all player UIDs"}]},"clickEvent":{"action":"run_command","value":"/trigger rx.pbd.Lt"},"color":"green"}]
+tellraw @s ["",{"text":"[List All UIDs]","hoverEvent":{"action":"show_text","value":[{"text":"Click to list all player UIDs"}]},"clickEvent":{"action":"run_command","value":"/trigger se_help set 2"},"color":"green"}]
 
 tellraw @s ["",{"text":"Hover over a command to learn more"}]
 
