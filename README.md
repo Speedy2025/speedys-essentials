@@ -6,6 +6,7 @@ A datapack inspired by the Essentials plugin that offers homes, hubs, and telepo
 
 ## Compatibility
 This pack relies on `PlayerDB`, created by rx#1284 on Discord. It should work with the latest version. There are no known datapacks that conflict with this.
+You can get it here: https://github.com/rx-modules/PlayerDB
 
 ## Usage
 Each player is assigned a uid on join (unless they already have one). This is used by most commands in place of traditional uuids or names.
