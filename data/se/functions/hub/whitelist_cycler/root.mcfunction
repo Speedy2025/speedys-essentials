@@ -10,6 +10,6 @@ scoreboard players set #se.hub.whitelist se.storage 2
 
 # Setup Lists
 data modify storage se:cycler l2 set value []
-data modify storage se:cycler l1 set from storage rx:io playerdb.player.data.se.hub.whitelist
+data modify storage se:cycler l1 set from storage rx.playerdb:io player.data.se.hub.whitelist
 
 function se:hub/whitelist_cycler/compare

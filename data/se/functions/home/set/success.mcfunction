@@ -9,22 +9,22 @@
 # 1- Take #1 and subtract #3 to get the 2 decimal places (1.55678 -> 155-100 -> 55)
 
 # <X>
-execute store result score #se.homes.x1 se.storage run data get storage rx:io playerdb.player.data.se.homes[-1].x 100.00
-execute store result score #se.homes.x2 se.storage run data get storage rx:io playerdb.player.data.se.homes[-1].x 1
+execute store result score #se.homes.x1 se.storage run data get storage rx.playerdb:io player.data.se.homes[-1].x 100.00
+execute store result score #se.homes.x2 se.storage run data get storage rx.playerdb:io player.data.se.homes[-1].x 1
 scoreboard players operation #se.homes.x3 se.storage = #se.homes.x2 se.storage
 scoreboard players operation #se.homes.x3 se.storage *= #se.const.100 se.storage
 scoreboard players operation #se.homes.x1 se.storage -= #se.homes.x3 se.storage
 
 # <Y>
-execute store result score #se.homes.y1 se.storage run data get storage rx:io playerdb.player.data.se.homes[-1].y 100
-execute store result score #se.homes.y2 se.storage run data get storage rx:io playerdb.player.data.se.homes[-1].y 1
+execute store result score #se.homes.y1 se.storage run data get storage rx.playerdb:io player.data.se.homes[-1].y 100
+execute store result score #se.homes.y2 se.storage run data get storage rx.playerdb:io player.data.se.homes[-1].y 1
 scoreboard players operation #se.homes.y3 se.storage = #se.homes.y2 se.storage
 scoreboard players operation #se.homes.y3 se.storage *= #se.const.100 se.storage
 scoreboard players operation #se.homes.y1 se.storage -= #se.homes.y3 se.storage
 
 # <Z>
-execute store result score #se.homes.z1 se.storage run data get storage rx:io playerdb.player.data.se.homes[-1].z 100
-execute store result score #se.homes.z2 se.storage run data get storage rx:io playerdb.player.data.se.homes[-1].z 1
+execute store result score #se.homes.z1 se.storage run data get storage rx.playerdb:io player.data.se.homes[-1].z 100
+execute store result score #se.homes.z2 se.storage run data get storage rx.playerdb:io player.data.se.homes[-1].z 1
 scoreboard players operation #se.homes.z3 se.storage = #se.homes.z2 se.storage
 scoreboard players operation #se.homes.z3 se.storage *= #se.const.100 se.storage
 scoreboard players operation #se.homes.z1 se.storage -= #se.homes.z3 se.storage

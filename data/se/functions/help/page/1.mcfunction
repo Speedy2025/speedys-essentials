@@ -1,4 +1,4 @@
-function rx.playerdb:api/get_self
+function #rx.playerdb:api/v2/get/self
 function se:utility/get/full_ontime
 function se:home/misc/max_homes
 

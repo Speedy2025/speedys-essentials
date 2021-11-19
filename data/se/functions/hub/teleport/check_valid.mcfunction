@@ -1,8 +1,8 @@
-# rx:io playerdb.player.data.se.hub
+# rx.playerdb:io player.data.se.hub
 scoreboard players set #hub.locked se.internal 0
 scoreboard players set #hub.whitelisted se.internal 0
-execute store result score #hub.locked se.internal run data get storage rx:io playerdb.player.data.se.hub.locked
-execute store result score #hub.whitelisted se.internal run data get storage rx:io playerdb.player.data.se.hub.whitelisted
+execute store result score #hub.locked se.internal run data get storage rx.playerdb:io player.data.se.hub.locked
+execute store result score #hub.whitelisted se.internal run data get storage rx.playerdb:io player.data.se.hub.whitelisted
 #Set input
 
 scoreboard players operation #hub.whitelist se.internal = @s rx.uid

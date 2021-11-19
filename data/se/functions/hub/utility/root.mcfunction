@@ -1,4 +1,4 @@
-function rx.playerdb:api/get_self
+function #rx.playerdb:api/v2/get/self
 
 execute if score @s hub matches -1 run function se:hub/utility/menu
 execute if score @s hub matches -2 run function se:hub/utility/set
@@ -9,4 +9,4 @@ execute if score @s hub matches -4 run function se:hub/utility/toggle_whitelist
 #  Both of which are called through se:hub/utility/whitelist/isvalid based on tag and validity
 #  I have moved these to a seperate function to save runtime resources.
 execute if score @s hub matches -6..-5 run function se:hub/utility/whitelist/prepare_input
-function rx.playerdb:api/save_self
+function #rx.playerdb:api/v2/save/self

@@ -4,7 +4,7 @@ scoreboard players remove #se.homes.list se.storage 5
 execute if score #se.homes.total se.storage matches 11.. if score #se.homes.list se.storage matches 1.. run function se:home/list/loop/clean
 
 #> Fix list lengths
-execute store result score #se.homes.total se.storage run data get storage rx:io playerdb.player.data.se.homes
+execute store result score #se.homes.total se.storage run data get storage rx.playerdb:io player.data.se.homes
 
 #> Display homes
 

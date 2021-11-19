@@ -4,4 +4,4 @@
 
 #> Combine Lists
 data modify storage se:cycler l2 append from storage se:cycler l1[]
-data modify storage rx:io playerdb.player.data.se.hub.whitelist set from storage se:cycler l2
+data modify storage rx.playerdb:io player.data.se.hub.whitelist set from storage se:cycler l2

@@ -3,7 +3,7 @@
 # Context: Player
 
 # Get & Validate Homes
-function rx.playerdb:api/get_self
+function #rx.playerdb:api/v2/get/self
 function se:home/cycler/root
 
 # Display Bounding Error

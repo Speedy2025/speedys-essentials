@@ -5,7 +5,7 @@
 #> Reset the input
 
 #> Get the home's version (for legacy and future support)
-execute store result score #se.version se.storage run data get storage rx:io playerdb.player.data.se.homes[-1].version
+execute store result score #se.version se.storage run data get storage rx.playerdb:io player.data.se.homes[-1].version
 execute unless score #se.version se.storage matches 1.. run scoreboard players set #se.version se.storage 2
 
 #> Prepare the home's coordinates based on home
@@ -23,6 +23,6 @@ function #se:home_version
 # - system and is handled in it's version function.
 function se:misc/teleport/step
 #execute if score #se.version se.storage matches 2 run function se:home/teleport/versions/version2_dimension
-execute unless data storage rx:io playerdb.player.data.se.homes[-1].name run tellraw @s[tag=!se.mute.system]  ["",{"text":"[Homes] ","color":"green"},{"text":"Teleported to home "},{"score":{"name":"@s","objective":"home"},"color":"gold"},{"text":"."}]
-execute if data storage rx:io playerdb.player.data.se.homes[-1].name run tellraw @s[tag=!se.mute.system] ["",{"text":"[Homes] ","color":"green"},{"text":"Teleported to "},{"nbt":"playerdb.player.data.se.homes[-1].name","storage":"rx:io","interpret":true,"color":"gold"},{"text":"."}]
+execute unless data storage rx.playerdb:io player.data.se.homes[-1].name run tellraw @s[tag=!se.mute.system]  ["",{"text":"[Homes] ","color":"green"},{"text":"Teleported to home "},{"score":{"name":"@s","objective":"home"},"color":"gold"},{"text":"."}]
+execute if data storage rx.playerdb:io player.data.se.homes[-1].name run tellraw @s[tag=!se.mute.system] ["",{"text":"[Homes] ","color":"green"},{"text":"Teleported to "},{"nbt":"player.data.se.homes[-1].name","storage":"rx.playerdb:io","interpret":true,"color":"gold"},{"text":"."}]
 

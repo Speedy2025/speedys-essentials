@@ -2,6 +2,6 @@
 # - Called by se:update_ontime
 # Context: Player
 
-function rx.playerdb:api/get_self
-execute store result storage rx:io playerdb.player.data.se.ontime int 1 run scoreboard players get @s tse_Ontime
-function rx.playerdb:api/save_self
+function #rx.playerdb:api/v2/get/self
+execute store result storage rx.playerdb:io player.data.se.ontime int 1 run scoreboard players get @s tse_Ontime
+function #rx.playerdb:api/v2/save/self

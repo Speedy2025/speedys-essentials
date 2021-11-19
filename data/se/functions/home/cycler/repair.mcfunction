@@ -9,5 +9,5 @@ tellraw @s[tag=se.debug] [{"text":"l2[] NBT: ","color":"green"},{"nbt":"l2[]","s
 data modify storage se:cycler l2 append from storage se:cycler l1[]
 
 #> Take the merged list and send it to the original homes list
-data modify storage rx:io playerdb.player.data.se.homes set from storage se:cycler l2
-tellraw @s[tag=se.debug] [{"text":"homes[] NBT: ","color":"dark_aqua"},{"nbt":"playerdb.player.data.se.homes[]","storage":"rx:io"}]
+data modify storage rx.playerdb:io player.data.se.homes set from storage se:cycler l2
+tellraw @s[tag=se.debug] [{"text":"homes[] NBT: ","color":"dark_aqua"},{"nbt":"player.data.se.homes[]","storage":"rx.playerdb:io"}]

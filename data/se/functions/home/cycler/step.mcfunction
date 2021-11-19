@@ -4,7 +4,7 @@
 
 #> Reset l2 and set l1 to the input
 data modify storage se:cycler l2 set value []
-data modify storage se:cycler l1 set from storage rx:io playerdb.player.data.se.homes
+data modify storage se:cycler l1 set from storage rx.playerdb:io player.data.se.homes
 
 #> Straight into the heart!
 function se:home/cycler/compare

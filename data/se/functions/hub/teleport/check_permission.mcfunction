@@ -14,12 +14,12 @@ scoreboard players set #se.hub.ok se.storage 0
 execute if score @s hub = @s rx.uid run scoreboard players set #se.hub.ok se.storage 1
 
 #>Next, check if the hub is locked.
-execute if score #se.hub.ok se.storage matches 0 if data storage rx:io playerdb.player.data.se.hub{locked: 0b} run scoreboard players set #se.hub.ok se.storage 1
+execute if score #se.hub.ok se.storage matches 0 if data storage rx.playerdb:io player.data.se.hub{locked: 0b} run scoreboard players set #se.hub.ok se.storage 1
 
 #>If the hub is locked, check if the player is whitelisted.
 #Note: I do NOT include the input inside the cycler to allow dynamic input.
 # Is it a waste? idk
-execute if score #se.hub.ok se.storage matches 0 if data storage rx:io playerdb.player.data.se.hub{whitelisted: 1b} run scoreboard players set #se.hub.ok se.storage 2
+execute if score #se.hub.ok se.storage matches 0 if data storage rx.playerdb:io player.data.se.hub{whitelisted: 1b} run scoreboard players set #se.hub.ok se.storage 2
 execute if score #se.hub.ok se.storage matches 2 run scoreboard players operation #se.hub.input se.storage = @s rx.uid
 execute if score #se.hub.ok se.storage matches 2 run function se:hub/whitelist_cycler/root
 execute if score #se.hub.ok se.storage matches 2 if score #se.hub.whitelist se.storage matches 1 run scoreboard players set #se.hub.ok se.storage 1

@@ -1,1 +1,1 @@
-function rx.playerdb:admin/list
+scoreboard players set @s rx.pdb.list_trigger 1

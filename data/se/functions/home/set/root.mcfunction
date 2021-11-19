@@ -7,7 +7,7 @@
 scoreboard players operation @s home = @s sethome
 
 #> Get Homes
-function rx.playerdb:api/get_self
+function #rx.playerdb:api/v2/get/self
 
 #> Validate Input
 function se:home/cycler/root
@@ -25,7 +25,7 @@ execute if score #se.homes.result se.storage matches 3 run function se:home/set/
 execute as @s[tag=!se.mute.system] if score #se.homes.result se.storage matches 2..3 run function se:home/set/success
 
 #> Save Homes
-function rx.playerdb:api/save_self
+function #rx.playerdb:api/v2/save/self
 
 #> Unflipify the score so that we don't accidently teleport to it too
 scoreboard players operation @s home *= #se.const.n1 se.storage

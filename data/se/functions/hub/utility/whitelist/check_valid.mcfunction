@@ -4,7 +4,7 @@
 #          > I will do actual work inside each of the whitelist
 #            functions, so this shouldn't be a problem.
 #
-# Reminder: rx:io playerdb.player.se.hub.whitelist[]
+# Reminder: rx.playerdb:io player.se.hub.whitelist[]
 
 
 execute if score @s hub = @s rx.uid run function se:hub/utility/whitelist/not_valid
