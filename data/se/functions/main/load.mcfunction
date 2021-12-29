@@ -8,6 +8,7 @@
 ###################
 scoreboard objectives add se.storage dummy [{"text":"se.storage","color":"dark_purple"}]
 scoreboard objectives add se.tpr.cache dummy [{"text":"se.tpr.cache","color":"dark_purple"}]
+scoreboard objectives add se.tprh.cache dummy [{"text":"se.tprh.cache","color":"dark_purple"}]
 scoreboard objectives add se.dim.id dummy [{"text":"se.dim.id","color":"dark_purple"}]
 execute unless score #se.id.curr se.storage matches 1.. run scoreboard players set #se.id.curr se.storage 1
 
@@ -30,6 +31,7 @@ scoreboard objectives add home trigger [{"text":"Home","color":"green"}]
 scoreboard objectives add sethome trigger [{"text":"Set Home","color":"green"}]
 scoreboard objectives add hub trigger [{"text":"Hub","color":"green"}]
 scoreboard objectives add tpr trigger [{"text":"TPr","color":"green"}]
+scoreboard objectives add tprh trigger [{"text":"TPrH","color":"green"}]
 scoreboard objectives add ontime trigger [{"text":"Ontime","color":"green"}]
 tellraw @a[tag=se.debug] ["",{"text":"[SE Debug] ","color":"green"},{"text":"Loaded player triggers."}]
 

@@ -29,9 +29,13 @@ execute as @a[scores={sethome=..-1},tag=!se.disable.homes] at @s run function se
 execute as @a[scores={hub=1..},tag=!se.disable.hubs] at @s run function se:hub/redirect
 execute as @a[scores={hub=..-1},tag=!se.disable.hubs] at @s run function se:hub/options/root
 
-#> Handle TPr [Teleport & Set]
+#> Handle TPr [Teleport & Accept/Deny]
 execute as @a[scores={tpr=1..},tag=!se.disable.tpr] run function se:tpr/send/root
 execute as @a[scores={tpr=..-1},tag=!se.disable.tpr] run function se:tpr/accept/root
+
+#> Handle TPrH [Teleport & Accept/Deny]
+execute as @a[scores={tprh=1..},tag=!se.disable.tprh] run function se:tprh/send/root
+execute as @a[scores={tprh=..-1},tag=!se.disable.tprh] run function se:tprh/accept/root
 
 #> Handle se_help
 execute as @a[scores={se_help=1..},tag=!se.disable.se_help] run function se:help/root
@@ -44,6 +48,7 @@ scoreboard players reset @a home
 scoreboard players reset @a sethome
 scoreboard players reset @a hub
 scoreboard players reset @a tpr
+scoreboard players reset @a tprh
 scoreboard players reset @a ontime
 scoreboard players reset @a se_help
 
@@ -52,6 +57,7 @@ scoreboard players enable @a[tag=!se.disable.all] home
 scoreboard players enable @a[tag=!se.disable.all] sethome
 scoreboard players enable @a[tag=!se.disable.all] hub
 scoreboard players enable @a[tag=!se.disable.all] tpr
+scoreboard players enable @a[tag=!se.disable.all] tprh
 scoreboard players enable @a[tag=!se.disable.all] ontime
 scoreboard players enable @a[tag=!se.disable.all] se_help
 
