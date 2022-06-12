@@ -1,6 +1,6 @@
 function #rx.playerdb:api/v2/get/self
 function se:utility/get/full_ontime
-function se:home/misc/max_homes
+function #se:max_homes
 
 tellraw @s ["",{"text":"\u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020","color":"blue","strikethrough":true},{"text":" [Speedy's Essentials] ","color":"green"},{"text":"\u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020","color":"blue","strikethrough":true}]
 
