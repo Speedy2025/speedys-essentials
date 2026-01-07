@@ -1,0 +1,2 @@
+$execute store result storage se:storage vals[{UUID: $(UUID)}].max_homes int 1 run scoreboard players get @s se.maxHomes
+$execute store result storage se:storage vals[{UUID: $(UUID)}].ontime int 1 run scoreboard players get @s se.ontime

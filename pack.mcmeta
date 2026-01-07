@@ -1,6 +1,6 @@
 {
-	"pack": {
-		"pack_format": 7,
-		"description": "Speedy's Essentials v3.2 - Homes, Hubs, and Teleport Requests!"
-	}
+    "pack": {
+        "description": "Speedy's Essentials, Updated to 1.21.6",
+        "pack_format": 80
+    }
 }

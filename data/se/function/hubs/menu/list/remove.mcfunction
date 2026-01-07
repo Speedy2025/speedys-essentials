@@ -1,0 +1,3 @@
+$execute if data storage se:storage vals[{UUID: $(UUID)}].hub.list[{uid: $(val)}] run tellraw @s ["",{text:"[Hub]",color:"green"},{text:" Removed "},{storage:"se:storage",nbt:"vals[{UUID: $(UUID)}].hub.list[{uid: $(val)}].name",color:"gold"},{text:" from the list."}]
+$execute unless data storage se:storage vals[{UUID: $(UUID)}].hub.list[{uid: $(val)}] run tellraw @s ["",{text:"[Hub]",color:"green"},{text:" That player is not on the list."}]
+$data remove storage se:storage vals[{UUID: $(UUID)}].hub.list[{uid: $(val)}]

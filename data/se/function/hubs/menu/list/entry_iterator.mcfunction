@@ -1,0 +1,3 @@
+tellraw @s ["",{nbt:"temp.list[0].name",color:"gold",storage:"se:storage",hover_event:{action:"show_text",value:["",{nbt:"temp.list[0].name",color:"green",storage:"se:storage",bold:true},{text:"\nUID: ",color:"gold"},{nbt:"temp.list[0].uid",storage:"se:storage"}]}}]
+data remove storage se:storage temp.list[0]
+execute if data storage se:storage temp.list[] run function se:hubs/menu/list/entry_iterator

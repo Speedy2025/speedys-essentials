@@ -1,0 +1,3 @@
+$execute if data storage se:storage vals[{UUID: $(UUID)}].hub.list[{uid: $(val)}] run tellraw @s ["",{text:"[Hub]",color:"green"},{text:" "},{storage:"se:storage",nbt:"vals[{UUID: $(UUID)}].hub.list[{uid: $(val)}].name",color:"gold"},{text:" is already on the list."}]
+$execute unless data storage se:storage vals[{UUID: $(UUID)}].hub.list[{uid: $(val)}] run tellraw @s ["",{text:"[Hub]",color:"green"},{text:" Added "},{storage:"se:key",nbt:"vals[{uid: $(val)}].name",color:"gold"},{text:" to the list."}]
+$execute unless data storage se:storage vals[{UUID: $(UUID)}].hub.list[{uid: $(val)}] run data modify storage se:storage vals[{UUID: $(UUID)}].hub.list append from storage se:key vals[{uid: $(val)}]

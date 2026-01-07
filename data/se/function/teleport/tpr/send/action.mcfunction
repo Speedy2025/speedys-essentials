@@ -1,0 +1,2 @@
+$tellraw @s ["",{text:"[TPr] ",color:"green"},{selector:"@a[tag=se.tpr.target,limit=1]"},{text:" would like to teleport to you. To accept, type "},{text:"/trigger tpr set $(val)",color:"gold",hover_event:{action:"show_text",value:[{text:"Click to accept",color:"gray",italic:true}]},click_event:{action:"run_command",command:"/trigger tpr set $(val)"}}]
+tag @s add se.tpr.destination
